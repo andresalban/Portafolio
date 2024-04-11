@@ -2,13 +2,78 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Referencia de la hoja de estilo de Css -->
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fonte del Proyecto Raleway -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Kode+Mono:wght@400..700&family=Nova+Mono&display=swap"
+          rel="stylesheet">
+
+    
     <title>Mi Portafolio</title>
 </head>
 <body>
+<div>
+    <!-- Sección del Menú  -->
+    <section class="menu">
+        <img src="assets/vector.png" alt="">
 
+        <nav>
+            <ul class="menu__list">
+                <li class="menu__list__item " ><a href="#sobre-mi">Sobre mi</a></li>
+                <li class="menu__list__item "><a href="#skills">Skills</a></li>
+                <li class="menu__list__item "><a href="#hobbies">Hobbies</a></li>
+                <li class="menu__list__item "><a href="#formacion">Formación</a></li>
+                <li class="menu__list__item "><a href="#xp">Proyectos</a></li>
+                <li class="menu__list__item contacto"><a href="#contacto">Contacto@fulana.com</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <!-- Sección del Header/Title/Hero -->
+    <section class="title">
+        <div class="title__div">
+            <img class="title__profile" src="assets/IMG_0013.jpg">
+            <div class="title__container">
+                <h1 class="title__name">Hola, soy Andrés</h1>
+                <h2 class="title__bio">construyo paginas web</h2>
+                <h3 class="title__subsection">Soy formado en Univeridad del Cauca y actualmente estoy
+                    participando del proyecto Oracle ONE en Alura Latam.</h3>
+                <ul class="title__network">
+                    <!-- Pon los enlaces de tus redes sociales favoritas -->
+                    <li class="title__network__item"><a href="">Github <img src="assets\arrow.png"> </a></li>
+                    <li class="title__network__item"><a href="">Linkedin <img src="assets\arrow.png"></a></li>
+                    <li class="title__network__item"><a href="">Instagram <img src="assets\arrow.png"></a></li>
+                    <li class="title__network__item"><a href="">Currículo <img src="assets\arrow.png"></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección sobre mi -->
+    <section class="about" id="sobre-mi">
+        <div class="about__container">
+            <h3 class="about__title">Sobre mi</h3>
+            <p class="about__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit
+                velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium.
+                Suspendisse potenti. Ut semper sagittis ligula et lacinia. </p>
+            <p class="about__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit
+                velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium.
+                Suspendisse potenti. Ut semper sagittis ligula et lacinia. Aenean sit amet felis venenatis, egestas
+                metus vitae, aliquet metus.</p>
+            <!-- Si quieres, pon tú firma acá! -->
+            <img src="assets/signature.png" alt="">
+
+        </div>
+    </section>
+</div>
 
 <script src="validaciones.js"></script>
 </body>

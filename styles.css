@@ -1,0 +1,241 @@
+:root {
+    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+    --cor-de-fundo: #F5F5F5;
+    --cor-de-link: #000;
+}
+
+html {
+    background-image: linear-gradient(to right top,
+    rgba(5, 25, 55, 0.60),
+    rgba(0, 77, 122, 0.60),
+    rgba(0, 135, 147, 0.60),
+    rgba(168, 235, 18, 0.6),
+    rgba(168, 235, 18, 0.60));
+    background-repeat: no-repeat;
+    background-size: auto;
+
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Raleway', serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM.
+
+Lo que es el BEM?
+
+BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el
+desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
+independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
+con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
+
+Enlace de la documentación oficial!
+https://en.bem.info/methodology/quick-start/*/
+
+/*Sección Menu*/
+
+section.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+.menu__list {
+    display: flex;
+    flex-direction: row;
+
+}
+.menu__list__item{
+    border-radius: 50px;
+    padding: 10px;
+    gap: 20px;
+}
+.menu__list__item:hover{
+    background: rgba(138, 43, 226, 0.38);
+
+}
+.contacto {
+    background-color: rgba(144, 138, 138, 0.31);
+}
+
+/*Sección Title*/
+
+section.title {
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+
+
+}
+
+.title__div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+    justify-content: center;
+
+}
+.title__profile{
+    width: 15%;
+    border-radius: 128px 128px 128px 25px;
+    }
+
+
+.title__container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    justify-content: center;
+    align-items: center;
+}
+.title__name{
+    font-size: 68px;
+}
+
+.title__bio{
+    font-size: 30px;
+
+}
+.title__subsection{
+
+}
+
+.title__network {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-family: "kode Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*Sección About*/
+
+section.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.about__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.about__container{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items:center ;
+    
+
+    width: 50%;
+
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 30px;
+    border-radius: 50px;
+
+    background-color: rgba(144, 138, 138, 0.31);
+
+}
+
+.about__title{
+    font-size: 34px;
+    margin-top: -60px;
+    padding: 20px;
+    background: darkcyan;
+    border-radius: 50px;
+}
+
+.about__paragraph{
+    font-style: italic;
+}
+
+/*Sección Hobbies*/
+
+section.hobbies {
+
+}
+
+/* Experiencia Académica*/
+
+section.academic {
+
+}
+
+/* experiencia*/
+
+section.experience {
+
+}
+
+/*Contacto*/
+
+section.formcontato {
+
+}
+
+/*footeer*/
+
+section.footer {
+
+}
+
+/* Vamos a desafiarnos trabajando con responsividad?
+Utiliza las referencias de los breakpoints @media abajo */
+
+
+/*Tablet*/
+@media (min-width: 768px) {
+
+    /* Menú */
+    /*title*/
+    /*Skills*/
+    /*Hobbies*/
+    /*Formación Académica*/
+    /*Experiencia Profesional*/
+
+}
+
+/*Mobile*/
+@media (min-width: 425px) {
+
+    /*Menu*/
+    /*Titulo*/
+    /*Sección sobre mi*/
+    /*Skills*/
+    /*Hobbies*/
+    /*Formación Académica*/
+    /*Experiencia Profesional*/
+    /*Contacto*/
+    /*Footer*/
+
+}
