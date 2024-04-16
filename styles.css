@@ -7,11 +7,11 @@
 
 html {
     background-image: linear-gradient(to right top,
-    rgba(5, 25, 55, 0.60),
-    rgba(0, 77, 122, 0.60),
-    rgba(0, 135, 147, 0.60),
-    rgba(168, 235, 18, 0.6),
-    rgba(168, 235, 18, 0.60));
+            rgba(5, 25, 55, 0.30),
+            rgba(0, 77, 122, 0.30),
+            rgba(0, 135, 147, 0.30),
+            rgba(168, 235, 18, 0.30),
+            rgba(168, 235, 18, 0.30));
     background-repeat: no-repeat;
     background-size: auto;
 
@@ -25,7 +25,9 @@ body {
     line-height: 1;
 }
 
-ol, ul, li {
+ol,
+ul,
+li {
     list-style: none;
 }
 
@@ -53,37 +55,45 @@ section.menu {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+}
 
+.menu img {
+    margin-right: 50px;
 }
 
 .menu__list {
     display: flex;
     flex-direction: row;
+    border-radius: 50px;
+    background-color: rgba(245, 245, 245, 0.30);
+    padding: 10px;
 
 }
-.menu__list__item{
+
+.menu__list__item {
     border-radius: 50px;
     padding: 10px;
-    gap: 20px;
+    gap: 30px;
+    font-size: 20px;
 }
-.menu__list__item:hover{
+
+.menu__list__item:hover {
     background: rgba(138, 43, 226, 0.38);
 
 }
+
 .contacto {
     background-color: rgba(144, 138, 138, 0.31);
 }
 
 /*Sección Title*/
-
 section.title {
-    margin-top: 20px;
+    margin-top: 50px;
     margin-left: 50px;
     margin-right: 50px;
     display: flex;
     justify-content: center;
     align-self: center;
-
 
 }
 
@@ -92,35 +102,34 @@ section.title {
     flex-direction: row;
     align-items: center;
     gap: 30px;
-    padding: 30px;
     justify-content: center;
 
 }
-.title__profile{
-    width: 15%;
+
+.title__profile {
     border-radius: 128px 128px 128px 25px;
-    }
+}
 
 
 .title__container {
     width: 50%;
     display: flex;
     flex-direction: column;
-    gap:30px;
+    gap: 30px;
     justify-content: center;
     align-items: center;
 }
-.title__name{
+
+.title__name {
     font-size: 68px;
 }
 
-.title__bio{
+.title__bio {
     font-size: 30px;
 
 }
-.title__subsection{
 
-}
+.title__subsection {}
 
 .title__network {
     display: flex;
@@ -131,29 +140,36 @@ section.title {
     font-style: normal;
 }
 
+.title__network__item {
+    border-radius: 50px;
+    padding: 10px;
+    gap: 20px;
+}
+
+.title__network__item:hover {
+    background: rgba(0, 128, 128, 0.30)
+}
+
+
 /*Sección About*/
+
+
 
 section.about {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    margin-top: 50px;
 }
 
-.about__container{
+
+
+.about__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
-}
-
-.about__container{
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    align-items:center ;
-    
 
     width: 50%;
 
@@ -163,11 +179,10 @@ section.about {
     padding: 30px;
     border-radius: 50px;
 
-    background-color: rgba(144, 138, 138, 0.31);
-
+    background-color: rgba(168, 235, 18, 0.30);
 }
 
-.about__title{
+.about__title {
     font-size: 34px;
     margin-top: -60px;
     padding: 20px;
@@ -175,39 +190,208 @@ section.about {
     border-radius: 50px;
 }
 
-.about__paragraph{
+.about__paragraph {
     font-style: italic;
+}
+
+/*Skills*/
+
+section.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    border-radius: 50px;
+    padding: 10px;
+    gap: 20px;
+    margin-top: 50px;
+
+}
+
+.skills__title {
+    font-size: 34px;
+    margin-left: -50px;
+    background: darkcyan;
+    padding: 20px;
+    border-radius: 50px 128px 128px 50px;
+    padding: 20px;
+
+}
+
+.skills__line {
+    display: flex;
+    flex-wrap: wrap;
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 25px;
+    border-radius: 50px;
+    padding: 10px;
+    gap: 20px;
+    background-color: rgba(168, 235, 18, 0.30);
+
+
+}
+
+.skills__box {
+
+    border-radius: 50px;
+    padding: 10px;
+    gap: 20px;
+
+}
+
+.skills__box ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-grow: 1;
+    flex-basis: 200;
+    box-sizing: border-box;
+}
+
+
+.skills__img img {
+    background-color: rgba(0, 139, 139, 0.30);
+    border-radius: 25px;
+    padding: 5px;
+
 }
 
 /*Sección Hobbies*/
 
 section.hobbies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    border-radius: 50px;
+    padding: 10px;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.hobbies__title {
+    font-size: 34px;
+    margin-left: -50px;
+    background: darkcyan;
+    padding: 20px;
+    border-radius: 50px 128px 128px 50px;
+    padding: 20px;
 
 }
+
+.hobbies__line {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 25px;
+    border-radius: 50px;
+    padding: 10px;
+    gap: 20px;
+    background-color: rgba(168, 235, 18, 0.30);
+
+}
+
+.hobbies__box {
+    border-radius: 50px;
+    padding: 10px;
+    gap: 20px;
+
+}
+
+.hobbies__box ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.hobbies__img img {
+    background-color: rgba(0, 139, 139, 0.30);
+    border-radius: 25px;
+    padding: 5px;
+}
+
 
 /* Experiencia Académica*/
 
 section.academic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    border-radius: 50px;
+    padding: 10px;
+    gap: 20px;
+    margin-top: 50px;
+}
 
+.academic__title {
+    font-size: 34px;
+    background: darkcyan;
+    border-radius: 50px 128px 128px 50px;
+    padding: 20px;
+    z-index: 1;
+}
+
+.academic__courses {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 25px;
+    border-radius: 50px;
+    padding: 10px;
+    gap: 20px;
+    background-color: rgba(168, 235, 18, 0.30);
+    margin-top: -50px;
+
+
+}
+
+.academic__courses__list {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding: 10px;
+
+
+}
+
+.academic__courses__box img {
+    border-radius: 25px;
+    padding: 5px;
+    width: 100px;
+    background-color: rgba(0, 139, 139, 0.30);
 }
 
 /* experiencia*/
 
-section.experience {
-
-}
+section.experience {}
 
 /*Contacto*/
 
-section.formcontato {
-
-}
+section.formcontato {}
 
 /*footeer*/
 
-section.footer {
-
-}
+section.footer {}
 
 /* Vamos a desafiarnos trabajando con responsividad?
 Utiliza las referencias de los breakpoints @media abajo */
