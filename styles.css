@@ -986,10 +986,7 @@ Utiliza las referencias de los breakpoints @media abajo */
     }
 
     /*Contacto*/
-    .formcontato__contacto_items {
-        width: 100%;
-    }
-
+  
     .formcontato__text {
         display: flex;
         flex-direction: column;
